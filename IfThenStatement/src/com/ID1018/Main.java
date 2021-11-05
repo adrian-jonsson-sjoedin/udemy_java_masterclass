@@ -19,7 +19,7 @@ public class Main {
             System.out.println("Top score greater than second top score AND top score less than 100");
         }
 
-        if ( (topScore > secondTopScore) || (topScore < 80) ) { // || is the OR operator
+        if ((topScore > secondTopScore) || (topScore < 80)) { // || is the OR operator
             System.out.println("Top score greater than second top score OR top score less than 100");
         }
 
@@ -30,7 +30,7 @@ public class Main {
         if (!isChar) { // the ! is the NOT operator. it tests the alternative value. so here it checks if isChar is false
             System.out.println("This print should be visible");//and if it is it executes the code bellow
         }
-        isChar=true;
+        isChar = true;
         boolean wasChar = isChar ? true : false; //Ternary Operator. checks the condition of isChar and then assigns
         if (wasChar) {                          //True to wasChar if isChar is True otherwise it assigns False to wasChar
             System.out.println("wasChar is true ");
