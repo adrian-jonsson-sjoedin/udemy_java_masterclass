@@ -14,7 +14,7 @@ public class Main {
         System.out.println(numberString);
         String lastString = "10";
         int myInt = 50;
-        lastString =lastString + myInt; //adding an integer to a string makes the integer to s string
+        lastString =lastString + myInt; //adding an integer to a string makes the integer to a string
         System.out.println("Last string is equal to " + lastString);
     }
 }
