@@ -1,25 +1,39 @@
 package com.Adrian;
 
 public class Bed {
-    private String maker;
-    private String size;
-    private String softness;
+   private String style;
+    private int pillows;
+    private int height;
+    private int sheets;
+    private int quilt;
 
-    public Bed(String maker, String size, String softness) {
-        this.maker = maker;
-        this.size = size;
-        this.softness = softness;
+    public Bed(String style, int pillows, int height, int sheets, int quilt) {
+        this.style = style;
+        this.pillows = pillows;
+        this.height = height;
+        this.sheets = sheets;
+        this.quilt = quilt;
+    }
+public void make() {
+    System.out.println("Making my bed.");
+}
+    public String getStyle() {
+        return style;
     }
 
-    public String getMaker() {
-        return maker;
+    public int getPillows() {
+        return pillows;
     }
 
-    public String getSize() {
-        return size;
+    public int getHeight() {
+        return height;
     }
 
-    public String getSoftness() {
-        return softness;
+    public int getSheets() {
+        return sheets;
+    }
+
+    public int getQuilt() {
+        return quilt;
     }
 }
