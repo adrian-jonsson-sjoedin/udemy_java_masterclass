@@ -17,17 +17,26 @@ public class Main {
         System.out.println("anotherIntValue = " + anotherIntValue);
 
         int[] myIntArray = new int[5];//reference type holds a reference or an adress to
-                                     //object but not the object themselves
-        int[] anotherArray = myIntArray;//this points to the same object as myIntArray
+        //object but not the object themselves
+        int[] anotherArray = myIntArray;//this points to the same object as myIntArray. has the same adress
 
         System.out.println("myIntArray = "+ Arrays.toString(myIntArray));
         System.out.println("anotherArray ="+Arrays.toString(anotherArray));
 
         anotherArray[0] = 1;//this will change the value of the integer on index 0
-                            //for the object anotherArray points to. Meaning this also
-                            //changes myIntArray
+        //for the object anotherArray points to. Meaning this also
+        //changes myIntArray
         System.out.println("after change myIntArray = "+Arrays.toString(myIntArray));
         System.out.println("after change anotherArray = "+Arrays.toString(anotherArray));
+
+        modifyArray(myIntArray);
+
+        System.out.println("after modifyArray myIntArray = "+Arrays.toString(myIntArray));
+        System.out.println("after modifyArray anotherArray = "+Arrays.toString(anotherArray));
+
     }
 
+    private static void modifyArray(int[] array) {
+        array[0] =2;
+    }
 }
