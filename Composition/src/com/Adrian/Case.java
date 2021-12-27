@@ -1,7 +1,5 @@
 package com.Adrian;
 
-import java.awt.*;
-
 public class Case {
     private String model;
     private String manufacturer;
