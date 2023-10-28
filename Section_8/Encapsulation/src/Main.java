@@ -13,5 +13,12 @@ public class Main {
         player.loseHealth(11);
         System.out.println("Remaining health = " + player.healthRemaining());
 
+        EnhancedPlayer tim = new EnhancedPlayer("Tim");
+        System.out.println("Initial health is " + tim.healthRemaining());
+
+
+        EnhancedPlayer bill = new EnhancedPlayer("Bill", 200, "Bow");
+        System.out.println("Initial health is " + tim.healthRemaining());
+
     }
 }

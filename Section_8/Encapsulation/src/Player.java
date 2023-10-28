@@ -1,3 +1,4 @@
+// Class with no encapsulation
 public class Player {
     public String name;
     public int health;
